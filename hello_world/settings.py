@@ -40,6 +40,7 @@ if 'CODESPACE_NAME' in os.environ:
 
 INSTALLED_APPS = [
     "pages.apps.PagesConfig",
+    "projects.apps.ProjectsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -136,7 +137,7 @@ STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "hello_world" / "staticfiles"
 
 MEDIA_URL = "media/"
-MEDIA_ROOT = BASE_DIR / "hello_world" / "media"
+MEDIA_ROOT = BASE_DIR / "hello_world" / "uploads/"
 
 
 # Default primary key field type
